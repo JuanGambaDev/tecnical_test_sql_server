@@ -1,0 +1,1 @@
+# tecnical_test_sql_server
