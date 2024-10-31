@@ -47,6 +47,6 @@ CREATE TABLE PermiRoleRecord (
     perrc_include BIT NOT NULL DEFAULT 1,                     -- Indica si el permiso se incluye (1) o se excluye (0) para el rol y registro
     
     -- Unique constraint for role, permission, entity catalog and record combination
-    CONSTRAINT UQ_Role_Permission_Entity_Record 
+    CONSTRAINT UQ_RoleId_PermissionId_Entity_RecordId
         UNIQUE (role_id, permission_id, entitycatalog_id, perrc_record)
 );

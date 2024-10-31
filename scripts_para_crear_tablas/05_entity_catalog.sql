@@ -25,7 +25,7 @@ Fecha: 27/9/2024
 -- Create EntityCatalog Table
 CREATE TABLE EntityCatalog (
     -- Primary Key
-    id_entit INT IDENTITY(1,1) PRIMARY KEY,                    -- Identificador único para el elemento del catálogo de entidades
+    id_entit BIGINT IDENTITY(1,1) PRIMARY KEY,                    -- Identificador único para el elemento del catálogo de entidades
     
     -- Entity Information
     entit_name NVARCHAR(255) NOT NULL UNIQUE,                  -- Nombre del modelo Django asociado
