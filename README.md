@@ -21,7 +21,7 @@ El proyecto está organizado en las siguientes carpetas:
 
 1. **Clonar el repositorio**:
    ```bash
-   git clone https://github.com/tu_usuario/mi-proyecto-sistema-permisos.git
+   git clone https://github.com/JuanGambaDev/tecnical_test_sql_server.git
    cd mi-proyecto-sistema-permisos
    ```
 
