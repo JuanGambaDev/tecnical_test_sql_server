@@ -1,6 +1,4 @@
-Claro, aquí tienes el `README.md` completo en formato Markdown:
 
-```markdown
 # Sistema de Permisos
 
 Este repositorio implementa un sistema de permisos desarrollado en SQL Server, diseñado para gestionar asignaciones de privilegios a usuarios y roles, tanto a nivel de entidad como de registro individual. Este enfoque permite un control granular del acceso, asegurando que los permisos se asignen de manera flexible y específica según las necesidades organizativas.
@@ -9,10 +7,10 @@ Este repositorio implementa un sistema de permisos desarrollado en SQL Server, d
 
 El proyecto está organizado en las siguientes carpetas:
 
-- **`scripts_para_crear_tablas/`**: Contiene los scripts para la creación de tablas y la inserción de datos de prueba.
-- **`scripts_procedimientos_almacenados/`**: Contiene los scripts de los procedimientos almacenados utilizados para gestionar y consultar permisos.
-- **`documentación/`**: Incluye documentación detallada del modelo de datos y ejemplos de uso de los procedimientos.
-- **`videos/`**: Contiene un video explicativo sobre la lógica y funcionamiento del sistema.
+- **scripts_para_crear_tablas/**: Contiene los scripts para la creación de tablas y la inserción de datos de prueba.
+- **scripts_procedimientos_almacenados/**: Contiene los scripts de los procedimientos almacenados utilizados para gestionar y consultar permisos.
+- **documentación/**: Incluye documentación detallada del modelo de datos y ejemplos de uso de los procedimientos.
+- **videos/**: Contiene un video explicativo sobre la lógica y funcionamiento del sistema.
 
 ## Requisitos
 
@@ -64,6 +62,5 @@ Las contribuciones son bienvenidas. Si deseas proponer cambios, por favor crea u
 ## Licencia
 
 Este proyecto está licenciado bajo la [MIT License](./LICENSE). Consulta el archivo LICENSE para más detalles.
-```
 
-Puedes copiar y pegar este contenido directamente en tu archivo `README.md`. Asegúrate de reemplazar `tu_usuario` con tu nombre de usuario en GitHub. Este formato es limpio y proporciona toda la información necesaria de manera organizada y accesible.
+
