@@ -10,14 +10,15 @@ INSERT INTO EntityCatalog
 ) 
 VALUES
 (
-    'Sucursal', 
+    'BranchOffice', 
     'Catálogo de sucursales del sistema', 
     1, 
     NULL
 ),
 (
-    'Centro de Costos', 
+    'CostCenter', 
     'Catálogo de centros de costo del sistema', 
     1, 
     NULL
 );
+

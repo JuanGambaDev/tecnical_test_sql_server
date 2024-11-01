@@ -37,3 +37,6 @@ CREATE TABLE EntityCatalog (
     -- Configuration
     entit_config NVARCHAR(MAX) NULL                           -- Configuración adicional para el elemento del catálogo
 );
+
+SELECT * FROM EntityCatalog
+

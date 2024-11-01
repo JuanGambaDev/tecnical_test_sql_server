@@ -1,13 +1,13 @@
 USE PermitSystem
 GO
 
-INSERT INTO PermiRoleRecord 
+INSERT INTO PermiUserRecord 
 (
-    role_id, 
+    usercompany_id, 
     permission_id, 
     entitycatalog_id, 
-    perrc_record, 
-    perrc_include
+    peusr_record, 
+    peusr_include
 ) 
 VALUES
 (1, 1, 1, 1, 1),
@@ -44,6 +44,9 @@ VALUES
 (2, 2, 2, 2, 1),
 (2, 3, 2, 2, 1),
 (2, 4, 2, 2, 1),
-(4, 2, 2, 1, 1),
-(4, 3, 2, 1, 1);
+(3, 4, 2, 2, 1);
+
+
+
+
 

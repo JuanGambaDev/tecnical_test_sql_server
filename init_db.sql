@@ -2,6 +2,7 @@
 -- Connect to the 'master' database to run this snippet
 USE master
 GO
+
 -- Uncomment the ALTER DATABASE statement below to set the database to SINGLE_USER mode if the drop database command fails because the database is in use.
 -- ALTER DATABASE PermitSystem SET SINGLE_USER WITH ROLLBACK IMMEDIATE;
 -- Drop the database if it exists
@@ -232,6 +233,27 @@ CREATE TABLE UserCompany (
     CONSTRAINT UQ_User_Company UNIQUE (user_id, company_id)
 );
 GO
+
+-- Create UserCompany Table
+CREATE TABLE UserRol (
+    -- Primary Key
+    id_userol BIGINT IDENTITY(1,1) PRIMARY KEY,                -- Identificador único para la relación usuario-rol
+    
+    -- Foreign Keys
+    user_id BIGINT NOT NULL                                   -- Usuario asociado a al rol
+        CONSTRAINT FK_UserRole_User 
+        FOREIGN KEY REFERENCES [User](id_user),
+    
+    role_id BIGINT NOT NULL                                -- rol asociada al usuario
+        CONSTRAINT FK_UserRole_Role 
+        FOREIGN KEY REFERENCES [Role](id_role),
+    
+    -- Status
+    userol_active BIT NOT NULL DEFAULT 1,                      -- Indica si la relación usuario-rol está activa (1) o inactiva (0)
+    
+    -- Unique constraint for user and company combination
+    CONSTRAINT UQ_User_Role UNIQUE (user_id, role_id)
+);
 
 -- Create PermiUser Table
 CREATE TABLE PermiUser (
