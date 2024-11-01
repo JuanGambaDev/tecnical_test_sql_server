@@ -60,6 +60,7 @@ BEGIN
         WHERE 
             uc.user_id = @userId 
             AND pu.entitycatalog_id = @entityId
+            AND pu.peusr_include = 1
         GROUP BY 
             uc.company_id, uc.user_id, pu.entitycatalog_id, ec.entit_name;
 
@@ -92,6 +93,7 @@ BEGIN
         WHERE 
             pr.entitycatalog_id = @entityId
             AND ur.user_id = @userId
+            AND pr.perol_include = 1
         GROUP BY 
             r.company_id, ur.user_id, pr.entitycatalog_id, ec.entit_name;
 
@@ -122,6 +124,7 @@ BEGIN
         WHERE 
             uc.user_id = @userId 
             AND pur.entitycatalog_id = @entityId
+            AND pur.peusr_include = 1
         GROUP BY 
             uc.company_id, uc.user_id, pur.entitycatalog_id, ec.entit_name, pur.peusr_record;
 
@@ -153,7 +156,9 @@ BEGIN
             UserRole ur ON r.id_role = ur.role_id
         WHERE 
             prr.entitycatalog_id = @entityId
+            AND prr.perrc_include = 1
             AND ur.user_id = @userId
+            
         GROUP BY 
             r.company_id, ur.user_id, prr.entitycatalog_id, ec.entit_name, prr.perrc_record;
 
