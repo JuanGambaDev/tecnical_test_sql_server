@@ -1,3 +1,6 @@
+USE PermitSystem;
+GO
+
 /*
 Catálogo de Entidades.
 

@@ -1,3 +1,5 @@
+USE PermitSystem;
+GO
 /*
 Permiso por Rol y Registro.
 

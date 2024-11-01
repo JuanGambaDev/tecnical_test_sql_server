@@ -1,3 +1,6 @@
+USE PermitSystem;
+GO
+
 /*
 Usuario por Compañía.
 
