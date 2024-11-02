@@ -44,12 +44,14 @@ El proyecto está organizado en las siguientes carpetas:
 Para obtener los permisos asignados a un usuario, ejecuta el procedimiento almacenado `sp_GetUserPermissions_Main`. A continuación, se muestra un ejemplo de uso:
 
 ```sql
-EXEC sp_GetUserPermissions_Main @user_id = 123, @entity_id = 1;
+EXEC sp_GetUserPermissions_Main @user_id = 3, @entity_id = 2;
 ```
 
 ## Documentación
 
 Para más detalles sobre la lógica de implementación, el modelo de datos y ejemplos de consultas, revisa los archivos en la carpeta `documentación/`.
+Para más detalles sobre los requisitos y objetivos de la prueba técnica, consulta el archivo [readme_prueba_tecnica.md](readme_prueba_tecnica.md).
+
 
 ## Video Explicativo
 
